@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes por Colombia </title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/utilidades.js"></script>
+
+</head>
+
+<body>
+    <script>
+
+        var imagenLogo = crearNodoImagen('logo.png', 'logo de pagina')
+
+        var divImagenLogo = crearNodo('div')
+        divImagenLogo.setAttribute('class', 'divLogo')
+
+        var tituloLogo = crearNodoConTexto('h1', 'TRAVEL')
+        var textoLogo = crearNodoConTexto('h3', 'THE BEST AGENCY')
+        var divTextoLogoPiePagina = crearNodo('div')
+
+        divTextoLogoPiePagina.setAttribute('class', 'divLogo')
+
+        adicionarNodoAContenedor(imagenLogo, divImagenLogo)
+        adicionarNodoAContenedor(tituloLogo, divTextoLogoPiePagina)
+        adicionarNodoAContenedor(textoLogo, divTextoLogoPiePagina)
+
+        var linkCasa = crearNodoConTexto('a', 'HOME')
+        var divHijoHome = crearNodo('div')
+
+        divHijoHome.setAttribute('class', 'divHijo')
+        var linkServicios = crearNodoConTexto('a', 'SERVICES')
+        
+        var divHijoServices = crearNodo('div')
+        divHijoServices.setAttribute('class', 'divHijo')
+        var linkEventos = crearNodoConTexto('a', 'EVENTS')
+        var divHijoEvents = crearNodo('div')
+        divHijoEvents.setAttribute('class', 'divHijo')
+        var linkAcerca = crearNodoConTexto('a', 'ABOUT US')
+        var divHijoAbout = crearNodo('div')
+        divHijoAbout.setAttribute('class', 'divHijo')
+        var linkContacto = crearNodoConTexto('a', 'CONTACT')
+        var divHijoContacto = crearNodo('div')
+        divHijoContacto.setAttribute('class', 'divHijo')
+
+        adicionarNodoAContenedor(linkCasa, divHijoHome)
+        adicionarNodoAContenedor(linkServicios, divHijoServices)
+        adicionarNodoAContenedor(linkEventos, divHijoEvents)
+        adicionarNodoAContenedor(linkAcerca, divHijoAbout)
+        adicionarNodoAContenedor(linkContacto, divHijoContacto)
+
+        var divFlexContenedor = crearNodo('div')
+        divFlexContenedor.setAttribute('class', 'flexContenedor')
+        adicionarNodoAContenedor(divImagenLogo, divFlexContenedor)
+        adicionarNodoAContenedor(divTextoLogoPiePagina, divFlexContenedor)
+        adicionarNodoAContenedor(divHijoHome, divFlexContenedor)
+        adicionarNodoAContenedor(divHijoServices, divFlexContenedor)
+        adicionarNodoAContenedor(divHijoEvents, divFlexContenedor)
+        adicionarNodoAContenedor(divHijoAbout, divFlexContenedor)
+        adicionarNodoAContenedor(divHijoContacto, divFlexContenedor)
+
+
+        var tituloPromocion = crearNodoConTexto('h2', '$8,450')
+        tituloPromocion.setAttribute('class', 'precio')
+        var textoPromosion = crearNodoConTexto('h3', 'Venice, Italy')
+        var pPromocion = crearNodoConTexto('p', 'Travel is free responsive template by templatemo. All images used in this tempalte are from')
+        var spanAnuncio = crearNodoConTexto('span', ' Unplash.')
+        var buttonAnuncio = crearNodoConTexto('button', 'PRE-BOOKING.')
+        adicionarNodoAContenedor(spanAnuncio, pPromocion)
+        var divAnuncio = crearNodo('div')
+        divAnuncio.setAttribute('class', 'divCajaPromocion')
+        adicionarNodoAContenedor(tituloPromocion, divAnuncio)
+        adicionarNodoAContenedor(textoPromosion, divAnuncio)
+        adicionarNodoAContenedor(pPromocion, divAnuncio)
+        adicionarNodoAContenedor(buttonAnuncio, divAnuncio)
+
+        var divItaly = crearNodoConTexto('div', 'ITALY')
+        divItaly.setAttribute('class', 'divPaises')
+        var divFrance = crearNodoConTexto('div', 'FRANCE')
+        divFrance.setAttribute('class', 'divPaises')
+        var divGermany = crearNodoConTexto('div', 'GERMANY')
+        divGermany.setAttribute('class', 'divPaises')
+        var divSpain = crearNodoConTexto('div', 'SPAIN')
+        divSpain.setAttribute('class', 'divPaises')
+        var divFlexContenedor2 = crearNodo('div')
+        divFlexContenedor2.setAttribute("class", "flexContenedor")
+
+        adicionarNodoAContenedor(divItaly, divFlexContenedor2)
+        adicionarNodoAContenedor(divFrance, divFlexContenedor2)
+        adicionarNodoAContenedor(divGermany, divFlexContenedor2)
+        adicionarNodoAContenedor(divSpain, divFlexContenedor2)
+
+        var divFlexContenedorInicio = crearNodo('div')
+        divFlexContenedorInicio.setAttribute('class', 'flexContenedorInicio')
+        adicionarNodoAContenedor(divFlexContenedor, divFlexContenedorInicio)
+        adicionarNodoAContenedor(divAnuncio, divFlexContenedorInicio)
+        adicionarNodoAContenedor(divFlexContenedor2, divFlexContenedorInicio)
+
+        var imagenItalia = crearNodoImagen('italia.png', 'Italia')
+        var pCiudadesItalia = crearNodoConTexto('p', 'Rome, Millan, Naples')
+        pCiudadesItalia.setAttribute("class", "p1")
+        var pHotelesItalia = crearNodoConTexto('p', 'SILVER HOTEL, 4 NIGHT, 5 STARTS')
+        pHotelesItalia.setAttribute('class', 'p2')
+        var buttonItalia = crearNodoConTexto('button', '$1,800 BOOK NOW')
+        var divHotelUno = crearNodo('div')
+        divHotelUno.setAttribute('class', 'divCiudadesEuropa')
+
+        adicionarNodoAContenedor(imagenItalia, divHotelUno)
+        adicionarNodoAContenedor(pCiudadesItalia, divHotelUno)
+        adicionarNodoAContenedor(pHotelesItalia, divHotelUno)
+        adicionarNodoAContenedor(buttonItalia, divHotelUno)
+
+        var imagenFrancia = crearNodoImagen('francia.png', 'Francia')
+        var pCiudadesFrancia = crearNodoConTexto('p', 'Paris, Marseille, Lyon')
+        pCiudadesFrancia.setAttribute('class', 'p1')
+        var pHotelesFrancia = crearNodoConTexto('p', 'NEW PALACE, 5 NIGHTS, 5 STARTS')
+        pHotelesFrancia.setAttribute('class', 'p2')
+        var buttonFrancia = crearNodoConTexto('button', '$2,300 BOOK NOW')
+        var divHotelDos = crearNodo('div')
+        divHotelDos.setAttribute('class', 'divCiudadesEuropa')
+
+        adicionarNodoAContenedor(imagenFrancia, divHotelDos)
+        adicionarNodoAContenedor(pCiudadesFrancia, divHotelDos)
+        adicionarNodoAContenedor(pHotelesFrancia, divHotelDos)
+        adicionarNodoAContenedor(buttonFrancia, divHotelDos)
+
+        var imagenAlemania = crearNodoImagen('alemania.png', 'Alemania')
+        var pCiudadesAlemania = crearNodoConTexto('p', 'Berlin, Hamburg, Munich')
+        pCiudadesAlemania.setAttribute('class', 'p1')
+        var pHotelesAlemania = crearNodoConTexto('p', 'LUXE HOTEL, 5 NIGHT, 6 STARTS')
+        pHotelesAlemania.setAttribute("class", "p2")
+        var buttonAlemania = crearNodoConTexto('button', '$3,100 BOOK NOW')
+        var divHotelTres = crearNodo('div')
+        divHotelTres.setAttribute('class', 'divCiudadesEuropa')
+
+        adicionarNodoAContenedor(imagenAlemania, divHotelTres)
+        adicionarNodoAContenedor(pCiudadesAlemania, divHotelTres)
+        adicionarNodoAContenedor(pHotelesAlemania, divHotelTres)
+        adicionarNodoAContenedor(buttonAlemania, divHotelTres)
+
+        var imagenEspaña = crearNodoImagen('españa.png', 'españa')
+        var pCiudadesEspaña = crearNodoConTexto('p', 'Madrid, Barcelona, Valencia')
+        pCiudadesEspaña.setAttribute("class", "p1")
+        var pHotelesEspaña = crearNodoConTexto('p', 'GOOD HOTEL, 4 NIGHT, 6 STARTS')
+        pHotelesEspaña.setAttribute("class", "p2")
+        var buttonEspaña = crearNodoConTexto('button', '$4,800 BOOK NOW')
+        var divHotelCuatro = crearNodo('div')
+        divHotelCuatro.setAttribute('class', 'divCiudadesEuropa')
+
+        adicionarNodoAContenedor(imagenEspaña, divHotelCuatro)
+        adicionarNodoAContenedor(pCiudadesEspaña, divHotelCuatro)
+        adicionarNodoAContenedor(pHotelesEspaña, divHotelCuatro)
+        adicionarNodoAContenedor(buttonEspaña, divHotelCuatro)
+
+        var divFlexContenedorDePaises = crearNodo('div')
+        divFlexContenedorDePaises.setAttribute('class', 'flexContenedorDePaises')
+        adicionarNodoAContenedor(divHotelUno, divFlexContenedorDePaises)
+        adicionarNodoAContenedor(divHotelDos, divFlexContenedorDePaises)
+        adicionarNodoAContenedor(divHotelTres, divFlexContenedorDePaises)
+        adicionarNodoAContenedor(divHotelCuatro, divFlexContenedorDePaises)
+
+        var divEspacioInicio = crearNodo('div')
+        divEspacioInicio.setAttribute('class', 'divEspacioCintaImagen')
+
+        var imagenUno = crearNodoImagen('Cohete.png', 'cohete')
+        var imagenDos = crearNodoImagen('Playa.png', 'playa')
+        var imagenTres = crearNodoImagen('Delfin.png', 'cohete')
+        var imagenCuatro = crearNodoImagen('Cohete.png', 'cohete')
+        var imagenCinco = crearNodoImagen('Playa.png', 'cohete')
+        var imagenSeis = crearNodoImagen('Delfin.png', 'cohete')
+        var divUno = crearNodo('div')
+        var divDos = crearNodo('div')
+        var divTres = crearNodo('div')
+        var divCuatro = crearNodo('div')
+        var divCinco = crearNodo('div')
+        var divSeis = crearNodo('div')
+        adicionarNodoAContenedor(imagenUno, divUno)
+        adicionarNodoAContenedor(imagenDos, divDos)
+        adicionarNodoAContenedor(imagenTres, divTres)
+        adicionarNodoAContenedor(imagenCuatro, divCuatro)
+        adicionarNodoAContenedor(imagenCinco, divCinco)
+        adicionarNodoAContenedor(imagenSeis, divSeis)
+
+        var divEspacioFinal = crearNodo('div')
+        divEspacioFinal.setAttribute('class', 'divEspacioCintaImagen')
+
+        var divLineaHorizontal = crearNodo('div')
+        divLineaHorizontal.setAttribute("class", "divLineaHorizontal")
+        adicionarNodoAContenedor(divEspacioInicio, divLineaHorizontal)
+        adicionarNodoAContenedor(divUno, divLineaHorizontal)
+        adicionarNodoAContenedor(divDos, divLineaHorizontal)
+        adicionarNodoAContenedor(divTres, divLineaHorizontal)
+        adicionarNodoAContenedor(divCuatro, divLineaHorizontal)
+        adicionarNodoAContenedor(divCinco, divLineaHorizontal)
+        adicionarNodoAContenedor(divSeis, divLineaHorizontal)
+        adicionarNodoAContenedor(divEspacioFinal, divLineaHorizontal)
+
+
+        var imagenFinalPagina = crearNodoImagen('FinalPagina.jpeg', 'fin')
+        var divFinalPagina = crearNodo('div')
+        adicionarNodoAContenedor(imagenFinalPagina, divFinalPagina)
+        var divPieDePagina = crearNodo('div')
+        divPieDePagina.setAttribute('class', 'finDePagina')
+        adicionarNodoAContenedor(divFinalPagina, divPieDePagina)
+
+        var divPrincipal = crearNodo('div')
+        adicionarNodoAContenedor(divFlexContenedorInicio, divPrincipal)
+        adicionarNodoAContenedor(divFlexContenedorDePaises, divPrincipal)
+        adicionarNodoAContenedor(divLineaHorizontal, divPrincipal)
+        adicionarNodoAContenedor(divPieDePagina, divPrincipal)
+
+        
+        adicionarNodoABody(divPrincipal)
+
+        // esta pagina la cree solo con javascript 
+    </script>
+    
+</body>
+
+</html>
